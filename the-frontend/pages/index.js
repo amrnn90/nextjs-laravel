@@ -4,11 +4,12 @@ import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import { Router } from "next/router";
 import { getServerSidePropsWrapper } from "../utils/getServerSidePropsWrapper";
+import "twin.macro"
 
 export default function Home() {
   return (
     <Layout>
-      <div>Home</div>
+      <div tw="bg-red-500">Home</div>
     </Layout>
   );
 }
